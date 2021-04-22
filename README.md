@@ -12,7 +12,7 @@ Todo o layout foi desenvolvido com CSS puro, para aprimorar os conhecimentos e a
 
 # Pacotes usados no projeto
 
-- react
+- redux
 - react-redux
 - react-icons
 
