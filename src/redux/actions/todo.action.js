@@ -1,4 +1,4 @@
-import { ADD_TODO, REMOVE_TODO } from "../constants";
+import { ADD_TODO, REMOVE_TODO, TOOGLE_TODO } from "../constants";
 
 export function addTodo(todo) {
   return {
@@ -14,6 +14,13 @@ export function addTodo(todo) {
 export function removeTodo(id) {
   return {
     type: REMOVE_TODO,
+    payload: id,
+  };
+}
+
+export function toogleTodo(id) {
+  return {
+    type: TOOGLE_TODO,
     payload: id,
   };
 }

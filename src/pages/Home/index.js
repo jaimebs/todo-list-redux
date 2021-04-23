@@ -17,7 +17,11 @@ export default function Home() {
           ) : (
             todos.map((todo) => (
               <div key={todo.id}>
-                <TodoItem id={todo.id} descricao={todo.descricao} />
+                <TodoItem
+                  id={todo.id}
+                  descricao={todo.descricao}
+                  feito={todo.feito}
+                />
               </div>
             ))
           )}

@@ -1,11 +1,12 @@
 .todo {
+  width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
   color: #948e8e;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 
 .todo button {
@@ -17,9 +18,22 @@
   border-radius: 0.2rem;
   font-size: 0;
   transition: filter 0.2s;
+  position: absolute;
+  right: 10px;
 }
 
 .todo button:hover {
   cursor: pointer;
   filter: brightness(0.95);
+}
+
+.todo input[type="checkbox"] {
+  width: 40px;
+  height: 18px;
+  background: #555;
+  border-radius: 3px;
+}
+
+.todo input[type="checkbox"]:hover {
+  cursor: pointer;
 }
